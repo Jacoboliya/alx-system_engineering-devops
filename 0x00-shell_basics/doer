@@ -1,3 +1,5 @@
 #!bin/bash
 2> /dev/null
-cd ~
+cd ..
+cd ..
+cd root
