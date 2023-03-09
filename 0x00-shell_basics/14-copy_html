@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -newer ../ -exec cp -n {} .. \;
+rsync -u --exclude '*.html' --exclude '*/' ./* .. >/dev/null 2>&1; rsync -u --include '*.html' --exclude '*/' ./* .. >/dev/null 2>&1
