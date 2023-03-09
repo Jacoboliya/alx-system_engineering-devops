@@ -1,0 +1,2 @@
+#!bin/bash
+ls -a | tr '\n' ',' | sed 's/,$/\n/' | sed 's/,\.\//\n\.\//g' | sed 's/,\.\./\n\.\./g' | sort -k1.1n -k1.2
